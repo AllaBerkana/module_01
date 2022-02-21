@@ -1,7 +1,5 @@
 'use strict'
 
-/*
-
 //Вторая задача:
 {const rain = Math.round(Math.random());
     console.log('rain: ', rain);
@@ -11,9 +9,9 @@
         console.log('Дождя нет!');
     }
 }
-*/
+
 //Третья задача:
-/*
+
 {
     const scoreMath = prompt('Введите кол-во баллов по математике:');
     const scoreLang = prompt('Введите кол-во баллов по русскому языку:');
@@ -25,10 +23,9 @@
     } 
 
 }
-*/
 
 //Четвёртая задача:
-/*
+
 const money  = prompt("Сколько денег Вы хотите снять?");
 const minCash = 100;
 
@@ -43,4 +40,3 @@ if(money < 100){
     console.log(`Вы можете снять ${cash}. Остаток на карточке ${remainder} рублей`);
 }
 
-*/
