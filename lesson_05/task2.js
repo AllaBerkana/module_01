@@ -1,7 +1,7 @@
 'use strict'
-const string = 'привет Мир'
+
 {
-    const getString = () => {
+    const getString = (string) => {
     
         let lowerString = string.toLowerCase();
         const firstLetter = lowerString[0].toUpperCase();
@@ -10,5 +10,5 @@ const string = 'привет Мир'
         return console.log('Task2: ', newString);
     };
 
-    getString();
+    getString('привет Мир');
 }
