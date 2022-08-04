@@ -1,29 +1,55 @@
 'use strict'
 
 {
-const calculate = (cart, goods, promo) => {
-    let newCart = cart;
+    const calculate = (cart, goods, promo) => {
+        let newCart = cart;
 
-    if (goods >= 10){
-        newCart -=  newCart*0.03;
-    } 
+        if (goods >= 10) {
+            newCart -= newCart * 0.03;
+        }
 
-    //? В условии использовать cart или newCart ?
-    if (newCart >= 30000){
-        let discountToCart = (newCart - 30000)*0.15;
-        newCart -= discountToCart;
-    }
+        //? В условии использовать cart или newCart ?
+        if (newCart >= 30000) {
+            let discountToCart = (newCart - 30000) * 0.15;
+            newCart -= discountToCart;
+        }
 
-    if (promo === 'METHED'){
-        newCart = (newCart - newCart*0.1);
-    } else if ((promo === 'G3H2Z1') && ((newCart) >=2000)){
-        newCart -=500;
-    }
+        if (promo === 'METHED') {
+            newCart = (newCart - newCart * 0.1);
+        } else if ((promo === 'G3H2Z1') && ((newCart) >= 2000)) {
+            newCart -= 500;
+        }
 
-    return console.log('Ваша сумма к оплате: ', newCart);
-};
+        return console.log('Ваша сумма к оплате: ', newCart);
+    };
 
-calculate(100000, 10, 'G3H2Z1');
+    calculate(100000, 10, 'G3H2Z1');
+}
+
+{
+    const calculate = (sumCart, sumItems, promo) => {
+        if (sumItems > 10) {
+            sumCart -= (sumCart * 0.03);
+            console.log('sumCart: ', sumCart);
+        }
+
+        if (sumCart > 30000) {
+            sumCart -= (sumCart - 30000) * 0.15;
+            console.log('sumCart: ', sumCart);
+        }
+
+        if (promo === "METHED") {
+            sumCart -= (sumCart * 0.1);
+            console.log('sumCart: ', sumCart);
+        }
+
+        if (promo === "G3H2Z1" && sumCart > 2000) {
+            sumCart -= 500;
+        }
+        return sumCart;
+    };
+    let withDisconte = calculate(40000, 100, "G3H2Z1");
+    console.log('withDisconte: ', withDisconte);
 }
 
 /*Задача:
