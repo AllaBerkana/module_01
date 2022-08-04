@@ -1,15 +1,31 @@
 'use strict';
 
-const names= ['Noah', 'Liam', 'Mason', 'Jacob', 'Robot', 'William', 'Ethan', 'Michael', 'Alexander'];
+{
+    const names = ['Noah', 'Liam', 'Mason', 'Jacob', 'Robot', 'William', 'Ethan', 'Michael', 'Alexander'];
+    const addPrefix = (arr, prefix) => {
+        const newArr = [];
+        arr.forEach(item => {
+            item = prefix + ' ' + item;
+            newArr.push(item);
+        });
+        return newArr;
+    };
+    const prefixArr = addPrefix(names, 'Mr');
+    console.log('prefixArr: ', prefixArr);
+}
 
-const addPrefix = (arr, prefix) => {
-    for ( let i in arr) {
-        arr[i] = `${prefix} ${arr[i]}`;
-    }
-    return console.log(arr);;
-};
+{
+    const names = ['Noah', 'Liam', 'Mason', 'Jacob', 'Robot', 'William', 'Ethan', 'Michael', 'Alexander'];
 
-addPrefix(names, 'Mr');
+    const addPrefix = (arr, prefix) => {
+        for (let i in arr) {
+            arr[i] = `${prefix} ${arr[i]}`;
+        }
+        return arr;
+    };
+    const prefixArr = addPrefix(names, 'Mr');
+    console.log('prefixArr: ', prefixArr);
+}
 
 /*
 Напишите функцию addPrefix 
