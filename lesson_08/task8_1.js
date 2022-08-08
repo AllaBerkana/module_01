@@ -172,3 +172,33 @@
         console.log('generator: ', generator);
     }
 }
+
+//lesson 8 - 1 - 4
+{
+    /*
+    Необходимо написать функцию, которая принимает 2 параметра n и m
+    И возвращает массив с високосными годами в диапазоне между n и m
+    Алгоритм определения високосного года следует найти в интернете самостоятельно или спросите у куратора
+    Учтите, что n и m могут быть отрицательными, а также может быть n > m или n < m.
+    */
+}
+
+{
+    const checkLeapYears = (m, n) => {
+        let lower = Math.min(m, n);
+        let upper = Math.max(m, n);
+
+        const years = [];
+
+        for (let y = lower; y <= upper; y++) {
+            console.log(y);
+            if (((y % 4 === 0) && (y % 100 !== 0)) || (y % 400 === 0)) {
+                years.push(y);
+            }
+        }
+
+        return years;
+    };
+    const leapYears = checkLeapYears(2010, 2027);
+    console.log('leapYears: ', leapYears);
+}
