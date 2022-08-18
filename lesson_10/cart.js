@@ -38,7 +38,7 @@ calculateItemPrice переделать таким образом, чтобы с
     },
 
     inceaseCount(number) {
-      return number + this.count;
+      return this.count += number;
     },
 
     calculateItemPrice() {
