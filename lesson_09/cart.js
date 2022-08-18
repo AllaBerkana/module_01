@@ -27,12 +27,8 @@
         // Принимает один параметр(число)
         // Увеличивает свойство count на это число
         inceaseCount(number) {
-            console.log(number);
-
-            return this.items.map(item => {
-                return item.count + number;
-            });
-
+            console.log('number: ', number);
+            return this.count += number;
         },
 
         // calculateItemPrice - посчитать общую стоимость товаров
