@@ -13,13 +13,14 @@
 
         add(nameItem, priceItem, countItem = 1) {
 
+
             this.items.push({
                 name: nameItem,
                 price: priceItem,
                 count: countItem,
             });
 
-            this.inceaseCount(7);
+            this.inceaseCount(countItem);
             this.calculateItemPrice();
         },
 
