@@ -34,6 +34,7 @@ calculateItemPrice переделать таким образом, чтобы с
         count: countItem,
       });
 
+      this.inceaseCount(countItem);
       this.inceaseCount();
     },
 
