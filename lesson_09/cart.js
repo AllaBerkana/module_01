@@ -19,7 +19,7 @@
                 count: countItem,
             });
 
-            this.inceaseCount();
+            this.inceaseCount(7);
             this.calculateItemPrice();
         },
 
@@ -52,8 +52,8 @@
     };
 
     const arrGood = [
-        ['apple', 20, 5, cart.inceaseCount(2)],
-        ['green', 50, 10, cart.inceaseCount(7)],
+        ['apple', 20, 5],
+        ['green', 50, 10],
     ];
     console.log(arrGood);
 
