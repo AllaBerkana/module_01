@@ -4,7 +4,7 @@ import { listIPv4 } from './ipv4.js';
 //Вам дан список ip-адресов -> IPv4
 //задача: написать функцию, которая будет возвращать число равное количеству уникальных ip-адресов
 
-//[... new Set(arr)]
+// [... new Set(arr)]
 {
     const getSetCol = (arr) => {
         const uniqVals = [... new Set(arr)];
@@ -15,7 +15,7 @@ import { listIPv4 } from './ipv4.js';
     console.log('numberVals: ', numberVals);
 }
 
-//Array.from(new Set(arr))
+// Array.from(new Set(arr))
 {
 
     const getSetCol = (arr) => {

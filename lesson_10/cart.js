@@ -22,11 +22,6 @@ calculateItemPrice переделать таким образом, чтобы с
       return this.calculateItemPrice();
     },
 
-    set totalPrice(val) {
-      val = this.calculateItemPrice();
-      console.log(val);
-    },
-
     add(nameItem, priceItem, countItem = 1) {
       this.items.push({
         name: nameItem,
@@ -69,6 +64,6 @@ calculateItemPrice переделать таким образом, чтобы с
 
   arrGood.forEach(item => cart.add(...item));
   // cart.clear();
-  cart.totalPrice = 10;
+  // cart.totalPrice = 10;
   cart.print();
 }
