@@ -83,13 +83,11 @@
     console.log('generator: ', generator);
 }
 
-//костыли, почему-то не получается через map
-//arr.map(getRandomNums);
+
 {
     const getGenerator = (amount, m, n) => {
         const arr = [];
 
-        //костыли
         const getRandomNums = () => {
             let elem = Math.round(Math.random() * 100);
             arr.push(elem)
